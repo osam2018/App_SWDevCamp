@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/info_text_capture"
+        android:alpha="0.7"
+        android:background="@drawable/back"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"/>
+
+    <FrameLayout
+        android:id="@+id/selected_territory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/design_default_color_primary"
+        android:alpha="0.3"
+        >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:layout_alignEnd="@+id/btn_cancel"
+        android:text="@string/capture"
+        android:alpha="0.5"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="48dp"
+        android:layout_height="35dp"
+        android:textSize="12sp"
+        android:text="@string/cancel"
+        android:alpha="0.5"
+        android:visibility="invisible"/>
+</RelativeLayout>
